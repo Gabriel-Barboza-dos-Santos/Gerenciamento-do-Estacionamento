@@ -26,18 +26,40 @@
 
   <div class="row">
     <div class="col s12">
-      <h2 id="h"> Cadastro de Veiculos </h2>
+      <h2 id="h"> Lista de Veiculos </h2>
     </div>
   </div>
 
-  <div class="row">
+<div class="row">
+<div class="col-xs-12">
+
+         <div class="form-group">
+            <label for="pizza"> Escolha qual o Veiculo: </label>
+             <select name="veiculos" id="lista">
+             </select>
+          </div>
+
+</div>
+</div>
+
+      <div class="row">
     <div class="col s12">
     <div class="input-group">
-      <label for="nomeProprietario"> Nome do Proprietario:</label>
-      <input type="text" id="nomeProprietario" name="nomeProprietario" placeholder="Digite aqui o nome">
+      <label for="codigoVeiculo"> Código Veiculo: </label>
+      <input type="number" name="codigoVeiculo" id="codigoVeiculo" readonly>
     </div> 
     </div>
   </div>
+
+      <div class="row">
+    <div class="col s12">
+    <div class="input-group">
+      <label for="nomeProprietario"> Nome do Proprietario: </label>
+      <input type="text" name="nomeProprietario" id="nomeProprietario">
+    </div> 
+    </div>
+  </div>
+
 
     <div class="row">
     <div class="col s12">
@@ -67,15 +89,12 @@
     </div>
   </div>
 
-   <div class="row">
+      <div class="row">
     <div class="col s12">
-  <div class="input-field col s12">
-    <select name="tipoV" id="tipoV" class="browser-default">
-      <option value="" disabled selected> Escola qual o tipo de Veiculo: </option>
-      <option name="carro" value="carro"> Carro </option>
-      <option name="moto" value="moto"> Moto </option>
-    </select>
-  </div>
+    <div class="input-group">
+      <label for="tipV"> Tipo de Veiculo:</label>
+      <input type="text" id="tipoV" name="tipoV">
+    </div> 
     </div>
   </div>
 
