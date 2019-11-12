@@ -7,6 +7,7 @@
    <script src="components/jquery-3.4.1.min.js"></script>
    <script src="components/loader.js"></script>
   <script src="components/acao.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 
 
@@ -32,9 +33,10 @@
 
   <div class="row">
     <div class="col s12">
-    <div class="input-group">
+    <div class="input-field">
+      <i class="material-icons prefix">account_circle</i>
+      <input type="text" id="nomeProprietario" name="nomeProprietario">
       <label for="nomeProprietario"> Nome do Proprietario:</label>
-      <input type="text" id="nomeProprietario" name="nomeProprietario" placeholder="Digite aqui o nome">
     </div> 
     </div>
   </div>
@@ -43,7 +45,7 @@
     <div class="col s12">
     <div class="input-group">
       <label for="placaVeiculo"> Placa do Veiculo: </label>
-      <input type="number" name="placaVeiculo" id="placaVeiculo">
+      <input type="text" name="placaVeiculo" id="placaVeiculo">
     </div> 
     </div>
   </div>
@@ -66,6 +68,17 @@
     </div> 
     </div>
   </div>
+
+  
+      <div class="row">
+    <div class="col s12">
+    <div class="input-group">
+      <label for="dataEntrada"> Hora de Entrada:</label>
+      <input type="time" id="dataEntrada" name="dataEntrada">
+    </div> 
+    </div>
+  </div>
+
 
    <div class="row">
     <div class="col s12">
