@@ -7,7 +7,6 @@
    <script src="components/jquery-3.4.1.min.js"></script>
    <script src="components/loader.js"></script>
   <script src="components/acao.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 
 
@@ -21,31 +20,42 @@
 
 
 
+
 </head>
 <body>
 <div class="container">
 
   <div class="row">
     <div class="col s12">
-      <h2 id="h"> Cadastro de Veiculos </h2>
+      <h2 id="h"> Lista de Veiculos </h2>
     </div>
   </div>
 
-  <div class="row">
+<div class="row">
+<div class="col-xs-12">
+
+         <div class="form-group">
+              <label for="placaVeiculo"> Digite a placa para busca do Veiculo: </label>
+              <input type="text" name="placaVeiculo" id="placaVeiculo">
+          </div>
+
+</div>
+</div>
+
+      <div class="row">
     <div class="col s12">
-    <div class="input-field">
-      <i class="material-icons prefix">account_circle</i>
-      <input type="text" id="nomeProprietario" name="nomeProprietario">
-      <label for="nomeProprietario"> Nome do Proprietario:</label>
+    <div class="input-group">
+      <label for="codigoVeiculo"> Código Veiculo: </label>
+      <input type="number" name="codigoVeiculo" id="codigoVeiculo" readonly>
     </div> 
     </div>
   </div>
 
-    <div class="row">
+      <div class="row">
     <div class="col s12">
     <div class="input-group">
-      <label for="placaVeiculo"> Placa do Veiculo: </label>
-      <input type="text" name="placaVeiculo" id="placaVeiculo">
+      <label for="nomeProprietario"> Nome do Proprietario: </label>
+      <input type="text" name="nomeProprietario" id="nomeProprietario">
     </div> 
     </div>
   </div>
@@ -69,26 +79,21 @@
     </div>
   </div>
 
-  
-      <div class="row">
+ <div class="row">
     <div class="col s12">
     <div class="input-group">
       <label for="dataEntrada"> Hora de Entrada:</label>
-      <input type="time" id="dataEntrada" name="dataEntrada">
+      <input type="time" id="dataEntrada" name="dataEntrada" readonly>
     </div> 
     </div>
   </div>
 
-
-   <div class="row">
+  <div class="row">
     <div class="col s12">
-  <div class="input-field col s12">
-    <select name="tipoV" id="tipoV" class="browser-default">
-      <option value="" disabled selected> Escola qual o tipo de Veiculo: </option>
-      <option name="carro" value="carro"> Carro </option>
-      <option name="moto" value="moto"> Moto </option>
-    </select>
-  </div>
+    <div class="input-group">
+      <label for="tipV"> Tipo de Veiculo:</label>
+      <input type="text" id="tipoV" name="tipoV">
+    </div> 
     </div>
   </div>
 
@@ -96,11 +101,11 @@
   <div class="row">
   <div class="center">
     <div class="col s6">
-      <a class="waves-effect waves-light btn" id="cadastrarV"><i class="material-icons left">local_parking</i> Cadastrar</a>
+      <a class="waves-effect waves-light btn" id="pagamentoV"><i class="material-icons left">local_parking</i> Pagamento </a>
     </div>
 
         <div class="col s6">
-      <a class="waves-effect waves-light btn" id="listarV"><i class="material-icons left">search</i> Listar </a>
+      <a class="waves-effect waves-light btn" id="pesquisaV"><i class="material-icons left">search</i> Pesquisar Placa </a>
     </div>
    </div>
   </div>
