@@ -99,7 +99,7 @@ function preencheMinuto(){
 }
 var total = ((horaSaida + (minutoSaida/60)) - (horaEntrada + (minutoEntrada/60))) * valorHora;
 
-})
+});
 
 $(document).on("click", "#pagamentoV", function(){
   var parametros  = {
